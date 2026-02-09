@@ -12,6 +12,7 @@
   "type": "commonjs",
   "dependencies": {
     "express": "^5.2.1",
+    "json2csv": "^6.0.0-alpha.2",
     "sqlite3": "^5.1.7"
   }
 }

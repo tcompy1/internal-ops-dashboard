@@ -8,6 +8,8 @@ const PORT = 3000;
 //Middleware
 app.use(express.json());
 
+app.use(express.static('public'));
+
 // Databse connection
 const db = new sqlite3.Database('./database.db', (err) => {
     if (err) {
