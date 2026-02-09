@@ -1,6 +1,7 @@
 # Internal Ops Dashboard
 
-A full-stack internal support request tracker built with Node.js, Express, and SQLite. This project demonstrates a complete CRUD workflow, CSV export, and a simple frontend for internal application support.
+A simple internal operations dashboard that allows users to submit, view, and manage support requests. Built with Node.js, Express, SQLite, and vanilla JavaScript. Includes a REST API and basic front-end UI.
+
 
 ## Features
 
@@ -12,15 +13,36 @@ A full-stack internal support request tracker built with Node.js, Express, and S
 
 ## Tech Stack
 
-- Backend: Node.js, Express
-- Database: SQLite
-- Frontend: HTML, CSS, Vanilla JavaScript
-- Tools: Postman (API testing), Git/GitHub (version control)
+- Node.js
+- Express
+- SQLite
+- HTML/CSS/JavaScript
+- Git
 
 ## Installation
 
-1. Clone the repository:
+1. Clone the repo:
+   git clone https://github.com/tcompy1/internal-ops-dashboard.git
+2. Navigate to the folder:
+   cd internal-ops-dashboard
+3. Install dependencies:
+   npm install
+4. Start the server:
+   node server.js
+5. Open your browser at http://localhost:3000
 
-```bash
-git clone https://github.com/tcompy1/internal-ops-dashboard.git
-cd internal-ops-dashboard
+## Usage
+- Submit a new support request via the form
+- Click "Refresh List" to view all requests
+- Each request includes a title, description, and timestamp
+
+## API Endpoints
+
+- GET /api/request - returns all requets
+- POST /api/request - adds a new request
+
+## Author
+Trent Compton
+
+## Credits
+- Built as part of portfolio project for learning Node.js, Express, and SQLite
